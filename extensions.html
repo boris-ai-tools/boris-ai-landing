@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boris AI — Chrome Extensions powered by AI</title>
+  <meta name="description" content="AI-powered Chrome extensions: WriteFlow AI writing assistant, ClauseGuard contract scanner, ReplyPilot freelancer proposals. Free to use.">
+
+  <meta property="og:title" content="Boris AI — Chrome Extensions powered by AI">
+  <meta property="og:description" content="AI writing, contract scanning, and proposal generation — right in your browser.">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root { --navy: #1a1a2e; --dark: #16213e; --accent: #4f8cff; --green: #10b981; --bg: #0a0a1a; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: #e0e0e0; }
+
+    .hero {
+      text-align: center; padding: 80px 20px 60px;
+      background: linear-gradient(180deg, var(--navy) 0%, var(--bg) 100%);
+    }
+    .hero h1 { font-size: clamp(32px, 5vw, 56px); font-weight: 800; margin-bottom: 16px; }
+    .hero h1 span { background: linear-gradient(135deg, var(--accent), #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p { font-size: 18px; color: #aaa; max-width: 600px; margin: 0 auto 32px; line-height: 1.6; }
+
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 1000px; margin: 0 auto; padding: 0 20px 80px; }
+
+    .card {
+      background: linear-gradient(135deg, rgba(30,58,95,0.4), rgba(13,33,55,0.4));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px; padding: 32px; transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.3); }
+
+    .card-icon { font-size: 48px; margin-bottom: 16px; }
+    .card h2 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+    .card .tagline { color: #aaa; font-size: 14px; margin-bottom: 16px; line-height: 1.5; }
+    .card .features { list-style: none; margin-bottom: 20px; }
+    .card .features li { padding: 4px 0; font-size: 13px; color: #ccc; }
+    .card .features li::before { content: "✓ "; color: var(--green); font-weight: 700; }
+
+    .card .price { font-size: 14px; color: #aaa; margin-bottom: 16px; }
+    .card .price strong { font-size: 24px; color: #fff; }
+
+    .btn-chrome {
+      display: inline-block; padding: 12px 24px; background: var(--accent); color: #fff;
+      text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 14px;
+      transition: background 0.15s;
+    }
+    .btn-chrome:hover { background: #3b7cf5; }
+
+    .trust { text-align: center; padding: 40px 20px 60px; }
+    .trust p { color: #666; font-size: 13px; max-width: 600px; margin: 0 auto; }
+    .trust a { color: var(--accent); text-decoration: none; }
+
+    footer { text-align: center; padding: 20px; color: #444; font-size: 12px; border-top: 1px solid rgba(255,255,255,0.05); }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>AI-Powered <span>Chrome Extensions</span></h1>
+    <p>Tools that save you hours every day. Write better, sign smarter, win more clients — all powered by AI, right in your browser.</p>
+  </div>
+
+  <div class="products">
+    <div class="card">
+      <div class="card-icon">&#x2728;</div>
+      <h2>WriteFlow AI</h2>
+      <p class="tagline">Smart Writing Assistant — rewrite, summarize, translate, fix grammar in any text field.</p>
+      <ul class="features">
+        <li>10 AI actions (rewrite, formal, casual, shorter, longer...)</li>
+        <li>Floating toolbar on text selection</li>
+        <li>Right-click context menu</li>
+        <li>Works on any website</li>
+        <li>3 languages (EN, RU, ES)</li>
+      </ul>
+      <div class="price">Free 10/day &bull; Premium <strong>$7.99</strong>/mo</div>
+      <a href="#" class="btn-chrome">Add to Chrome — Free</a>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">&#x1f6e1;</div>
+      <h2>ClauseGuard</h2>
+      <p class="tagline">AI Contract Risk Scanner — highlights dangerous clauses in contracts, NDAs, and terms of service.</p>
+      <ul class="features">
+        <li>Risk scoring (1-10) with recommendations</li>
+        <li>Red/yellow/green clause highlighting</li>
+        <li>Plain-language explanations</li>
+        <li>Safer alternative suggestions</li>
+        <li>Auto-detects legal pages</li>
+      </ul>
+      <div class="price">Free 3/month &bull; Premium <strong>$14.99</strong>/mo</div>
+      <a href="#" class="btn-chrome">Add to Chrome — Free</a>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">&#x1f680;</div>
+      <h2>ReplyPilot</h2>
+      <p class="tagline">AI Proposal Writer for Freelancers — generate winning proposals on Upwork, Fiverr, LinkedIn.</p>
+      <ul class="features">
+        <li>Analyzes job requirements automatically</li>
+        <li>Personalized opening lines</li>
+        <li>Multiple tones (professional, friendly, confident)</li>
+        <li>Competitive pricing suggestions</li>
+        <li>A/B test mode for proposals</li>
+      </ul>
+      <div class="price">Free 5/day &bull; Premium <strong>$12.99</strong>/mo</div>
+      <a href="#" class="btn-chrome">Add to Chrome — Free</a>
+    </div>
+  </div>
+
+  <div class="trust">
+    <p>Your data stays private. We never store your text or track your browsing. All processing happens via secure API calls. <a href="privacy-policy.html">Read our Privacy Policy</a>.</p>
+  </div>
+
+  <footer>
+    &copy; 2026 Boris AI. All extensions are free to try.
+  </footer>
+</body>
+</html>
